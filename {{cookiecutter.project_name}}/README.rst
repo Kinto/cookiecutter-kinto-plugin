@@ -3,17 +3,17 @@
 
 |travis| |master-coverage|
 
-.. |travis| image:: https://travis-ci.org/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}.svg?branch=master
-    :target: https://travis-ci.org/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}
+.. |travis| image:: https://travis-ci.org/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}.svg?branch=master
+    :target: https://travis-ci.org/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}
 
 .. |master-coverage| image::
-    https://coveralls.io/repos/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/badge.png?branch=master
+    https://coveralls.io/repos/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/badge.png?branch=master
     :alt: Coverage
-    :target: https://coveralls.io/r/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}
+    :target: https://coveralls.io/r/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}
 
 
 * `Kinto documentation <http://kinto.readthedocs.io/en/latest/>`_
-* `Issue tracker <https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/issues>`_
+* `Issue tracker <https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/issues>`_
 
 
 Installation
@@ -23,7 +23,7 @@ Install the Python package:
 
 ::
 
-    pip install {{cookiecutter.project_slug}}
+    pip install {{cookiecutter.project_name}}
 
 
 Include the package in the project configuration:

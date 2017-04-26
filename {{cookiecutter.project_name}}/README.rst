@@ -11,6 +11,7 @@
     :alt: Coverage
     :target: https://coveralls.io/r/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}
 
+{{ cookiecutter.project_short_description }}
 
 * `Kinto documentation <http://kinto.readthedocs.io/en/latest/>`_
 * `Issue tracker <https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/issues>`_

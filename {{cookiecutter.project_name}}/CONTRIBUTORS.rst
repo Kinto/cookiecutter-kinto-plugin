@@ -1,4 +1,4 @@
 Contributors
 ============
 
-* {{ cookiecurrent.fullname }} <{{ cookiecutter.email }}>
+* {{ cookiecutter.full_name }} <{{ cookiecutter.email }}>

@@ -25,7 +25,7 @@ class BaseWebTest(object):
     It sets up the database before each test and deletes it after.
     """
 
-    api_prefix = "v0"
+    api_prefix = "v1"
 
     def __init__(self, *args, **kwargs):
         super(BaseWebTest, self).__init__(*args, **kwargs)
@@ -44,7 +44,16 @@ class BaseWebTest(object):
     def _get_app_config(self, settings=None):
         config = Configurator(settings=self.get_app_settings(settings))
         kinto.core.initialize(config, version='0.0.1')
+        config.scan("kinto.views")
         return config
+
+    def get_app_settings(self, additional_settings=None):
+        settings = {**kinto.core.DEFAULT_SETTINGS}
+        settings.update(kinto.DEFAULT_SETTINGS)
+
+        if additional_settings is not None:
+            settings.update(additional_settings)
+        return settings
 
 
 class CapabilityTestView(BaseWebTest, unittest.TestCase):

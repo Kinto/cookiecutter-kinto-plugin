@@ -20,9 +20,9 @@ def get_request_class(prefix):
 
 
 class BaseWebTest(object):
-    """Base Web Test to test your cornice service.
+    """Base Web Test to test a service.
 
-    It setups the database before each test and delete it after.
+    It sets up the database before each test and deletes it after.
     """
 
     api_prefix = "v0"
@@ -49,7 +49,7 @@ class BaseWebTest(object):
 
 class CapabilityTestView(BaseWebTest, unittest.TestCase):
 
-    def test_portier_capability(self, additional_settings=None):
+    def test_{{cookiecutter.project_slug}}_capability(self, additional_settings=None):
         resp = self.app.get('/')
         capabilities = resp.json['capabilities']
         self.assertIn('{{ cookiecutter.project_slug.replace('kinto_', '') }}', capabilities)

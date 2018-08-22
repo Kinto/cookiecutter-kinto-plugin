@@ -26,7 +26,7 @@ ENTRY_POINTS = {}
 
 setup(name='{{ cookiecutter.project_slug.replace('_', '-') }}',
       version='0.1.0.dev0',
-      description='{{ cookiecutter.project_short_description }}',
+      description={{ cookiecutter.project_short_description|tojson }},
       long_description=README + "\n\n" + CHANGELOG + "\n\n" + CONTRIBUTORS,
       license='Apache License (2.0)',
       classifiers=[

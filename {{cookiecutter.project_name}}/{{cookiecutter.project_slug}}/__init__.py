@@ -18,6 +18,6 @@ def includeme(config):
         "{{ cookiecutter.project_slug.replace('kinto_', '') }}",
         version=__version__,
         description="{{ cookiecutter.project_short_description }}",
-        url="https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}")
+        url="https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}")
 
     # config.scan('{{cookiecutter.project_slug}}.views')
